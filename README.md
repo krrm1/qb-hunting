@@ -4,7 +4,9 @@ dox no pixel hunting for the new qb-core fixed and make it work with all event i
 made by : https://github.com/Doxthehuman/QBUS-Nopixel-Hunting
 fix by : me :)
 
-
+```
+video
+```
 https://youtu.be/WiommypiiaA
 ```
 to qb-core
