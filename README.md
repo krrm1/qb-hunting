@@ -42,7 +42,7 @@ https://github.com/BerkieBb/qb-target
 ```
 in Config.Peds
 
-[4] = { 
+[1] = { 
   model = 'ig_hunter',
   coords = vector4(-678.95, 5839.77, 17.33, 217.38),
   minusOne = true,
@@ -65,7 +65,7 @@ in Config.Peds
   distance = 2.5,
 }
 },
-[5] = { 
+[2] = { 
   model = 'csb_chef',
   coords = vector4(569.1, 2796.52, 42.02, 275.93),
   minusOne = true,
