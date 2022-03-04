@@ -7,14 +7,14 @@ client_script {
     --'cl_aimblock',
     --'cl_init.lua',
     --'cl_sell.lua',
-	'@PolyZone/client.lua',
-    '@PolyZone/BoxZone.lua',
-    '@PolyZone/EntityZone.lua',
-    '@PolyZone/CircleZone.lua',
-    '@PolyZone/ComboZone.lua',
+	--'@PolyZone/client.lua',
+   -- '@PolyZone/BoxZone.lua',
+   -- '@PolyZone/EntityZone.lua',
+   -- '@PolyZone/CircleZone.lua',
+   -- '@PolyZone/ComboZone.lua',
 
 }
-server_script 'server.lua'
+--server_script 'server.lua'
 
 -- shared_scripts { 
 -- 	'@Dox-core/import.lua'
