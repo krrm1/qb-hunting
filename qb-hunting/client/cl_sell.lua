@@ -1,5 +1,5 @@
 
-local QBCore = exports['qb-core']:GetCoreObject()
+local QBCore = exports['arabcodingteam-core']:GetCoreObject()
 local carcasses = {
     { name = "huntingcarcass1", price = 100, illegal = false },
     { name = "huntingcarcass2", price = 175, illegal = false },
@@ -8,7 +8,7 @@ local carcasses = {
 }
 
 
-RegisterNetEvent('Dox-hunting:client:sell', function ()
+RegisterNetEvent('arabcodingteam-hunting:client:sell', function ()
 
   sellattime()
 
@@ -20,5 +20,5 @@ function sellattime()
 	  return true
   end
   print(hour)
-  TriggerServerEvent("Dox-hunting:server:sell")
+  TriggerServerEvent("arabcodingteam-hunting:server:sell")
   end
