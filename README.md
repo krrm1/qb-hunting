@@ -1,5 +1,5 @@
 # arabcodingteam-hunting
-nopixel with qb-target
+qb-hunting with qb-target
 
 made by : https://github.com/Doxthehuman/QBUS-Nopixel-Hunting
 fix by : arabcodingteam
