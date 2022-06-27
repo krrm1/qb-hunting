@@ -1,6 +1,8 @@
 # arabcodingteam-hunting
 qb-hunting with qb-target
 
+dox-hunting code fixed
+
 made by : https://github.com/Doxthehuman/QBUS-Nopixel-Hunting
 fix by : arabcodingteam
 
