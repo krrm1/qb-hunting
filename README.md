@@ -1,8 +1,8 @@
 # dox-hunting
-dox no pixel hunting for the new qb-core fixed and make it work with all event in it and some shop to it and add qb-target spawn ped 
+nopixel with qb-target
 
 made by : https://github.com/Doxthehuman/QBUS-Nopixel-Hunting
-fix by : me :)
+fix by : arabcodingteam
 
 ```
 video
