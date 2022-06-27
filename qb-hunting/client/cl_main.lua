@@ -1,4 +1,4 @@
-local QBCore = exports['qb-core']:GetCoreObject()
+local QBCore = exports['arabcodingteam-core']:GetCoreObject()
 local cooldown = 0
 local used = false
 local jobSpawned = false
@@ -61,10 +61,10 @@ Citizen.CreateThread(function()
     `u_m_y_gunvend_01`,
   }
 
-	exports['qb-target']:AddTargetModel(legalHunts, {
+	exports['arabcodingteam-target']:AddTargetModel(legalHunts, {
     options = {
       {
-        event = "Dox-hunting:skinAnimal",
+        event = "arabcodingteam-hunting:skinAnimal",
         icon = "far fa-hand-paper",
         label = "Skin",
       },
@@ -89,8 +89,8 @@ RegisterNetEvent('hunting:shop', function (ShopItems)
 end)
 
 
-RegisterNetEvent('Dox-hunting:spawnAnimal')
-AddEventHandler('Dox-hunting:spawnAnimal', function()
+RegisterNetEvent('arabcodingteam-hunting:spawnAnimal')
+AddEventHandler('arabcodingteam-hunting:spawnAnimal', function()
   local ped = PlayerPedId()
   local coords = GetEntityCoords(ped)
   local radius = 100.0
@@ -139,12 +139,12 @@ Citizen.CreateThread(function()
 end)
 
 
-RegisterNetEvent('Dox-hunting:skinurmom', function ()
-  TriggerServerEvent('Dox-hunting:skinReward')
+RegisterNetEvent('arabcodingteam-hunting:skinurmom', function ()
+  TriggerServerEvent('arabcodingteam-hunting:skinReward')
 end)
 
-RegisterNetEvent('Dox-hunting:skinAnimal')
-AddEventHandler('Dox-hunting:skinAnimal', function()
+RegisterNetEvent('arabcodingteam-hunting:skinAnimal')
+AddEventHandler('arabcodingteam-hunting:skinAnimal', function()
   QBCore.Functions.TriggerCallback('QBCore:HasItem', function(hasItem)
     if hasItem then
       if DoesEntityExist(baitAnimal) then
@@ -179,8 +179,8 @@ AddEventHandler('Dox-hunting:skinAnimal', function()
   end, "WEAPON_KNIFE")
 end)
 
-RegisterNetEvent('Dox-hunting:usedBait')
-AddEventHandler('Dox-hunting:usedBait', function()
+RegisterNetEvent('arabcodingteam-hunting:usedBait')
+AddEventHandler('arabcodingteam-hunting:usedBait', function()
   for k,v in pairs (HuntingZones) do
     if IsEntityInZone(PlayerPedId(),v) then
       if cooldown <= 0 then
@@ -204,7 +204,7 @@ AddEventHandler('Dox-hunting:usedBait', function()
           baitCooldown()
          used = true
          usedBait()
-         TriggerServerEvent('Dox-hunting:removeBait')
+         TriggerServerEvent('arabcodingteam-hunting:removeBait')
          ClearPedTasksImmediately(PlayerPedId())
             IsDrilling = false
         end, function() -- Play When Cancel
@@ -233,7 +233,7 @@ function usedBait()
       print('waiting to spawn')
       Wait(1500)
       print('spawning')
-      TriggerEvent('Dox-hunting:spawnAnimal')
+      TriggerEvent('arabcodingteam-hunting:spawnAnimal')
       used = false
     end
   end)
