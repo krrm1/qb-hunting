@@ -1,4 +1,4 @@
-# dox-hunting
+# arabcodingteam-hunting
 nopixel with qb-target
 
 made by : https://github.com/Doxthehuman/QBUS-Nopixel-Hunting
