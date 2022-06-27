@@ -1,8 +1,8 @@
-local QBCore = exports['qb-core']:GetCoreObject()
+local QBCore = exports['arabcodingteam-core']:GetCoreObject()
 
 
-RegisterServerEvent('Dox-hunting:skinReward')
-AddEventHandler('Dox-hunting:skinReward', function()
+RegisterServerEvent('arabcodingteam-hunting:skinReward')
+AddEventHandler('arabcodingteam-hunting:skinReward', function()
   local src = source
   local Player = QBCore.Functions.GetPlayer(src)
   local randomAmount = math.random(1,30)
@@ -32,8 +32,8 @@ AddEventHandler('Dox-hunting:skinReward', function()
   --TriggerClientEvent('player:receiveItem', _source, 'meat',math.random(1,4))
 end)
 
-RegisterServerEvent('Dox-hunting:removeBait')
-AddEventHandler('Dox-hunting:removeBait', function()
+RegisterServerEvent('arabcodingteam-hunting:removeBait')
+AddEventHandler('arabcodingteam-hunting:removeBait', function()
   local src = source
   local Player = QBCore.Functions.GetPlayer(src)
   Player.Functions.RemoveItem("huntingbait", 1)
@@ -55,7 +55,7 @@ end)
 QBCore.Functions.CreateUseableItem("huntingbait", function(source, item)
   local Player = QBCore.Functions.GetPlayer(source)
 
-  TriggerClientEvent('Dox-hunting:usedBait', source)
+  TriggerClientEvent('arabcodingteam-hunting:usedBait', source)
 end)
 
 
@@ -66,8 +66,8 @@ local carcasses = {
   huntingcarcass4 = 1000
 }
 
-RegisterServerEvent('Dox-hunting:server:sell')
-AddEventHandler('Dox-hunting:server:sell', function()
+RegisterServerEvent('arabcodingteam-hunting:server:sell')
+AddEventHandler('arabcodingteam-hunting:server:sell', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     for k,v in pairs(carcasses) do
