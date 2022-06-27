@@ -3,22 +3,7 @@ game 'gta5'
 
 client_script {
     'client/cl_*.lua',
-    --'cl_main.lua',
-    --'cl_aimblock',
-    --'cl_init.lua',
-    --'cl_sell.lua',
-	--'@PolyZone/client.lua',
-   -- '@PolyZone/BoxZone.lua',
-   -- '@PolyZone/EntityZone.lua',
-   -- '@PolyZone/CircleZone.lua',
-   -- '@PolyZone/ComboZone.lua',
-
 }
---server_script 'server.lua'
-
--- shared_scripts { 
--- 	'@Dox-core/import.lua'
--- }
 
 files{
     'html/*'
@@ -26,4 +11,4 @@ files{
 
 ui_page('html/index.html')
 
--- dacca edit for arab screct
+-- arabcodingteam edit for arab screct
