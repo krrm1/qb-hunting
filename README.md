@@ -35,61 +35,13 @@ to qb-core
 
 ```
 sniper add-on :
-
 ```
+
 https://gta5mod.net/gta-5-mods/weapons/sniper-rifles/winchester-model-70-hunting-rifle/#google_vignette
 ```
 qb-target :
+
 ```
 https://github.com/BerkieBb/qb-target
 
 ```
-in Config.Peds
-
-[1] = { 
-  model = 'ig_hunter',
-  coords = vector4(-678.95, 5839.77, 17.33, 217.38),
-  minusOne = true,
-  freeze = true,
-  invincible = true,
-  blockevents = true,
-  -- animDict = 'amb@world_human_aa_smoke@male@idle_a',
-  -- anim = 'idle_a',
-  scenario = 'WORLD_HUMAN_AA_SMOKE',
-  flag = 1,
-  target = {
-      options = {
-      {
-       type = "client",
-       event = "hunting:shop",
-       icon = 'fas fa-shopping-basket ',
-       label = 'hunting shop',
-      }
-  },
-  distance = 2.5,
-}
-},
-[2] = { 
-  model = 'csb_chef',
-  coords = vector4(569.1, 2796.52, 42.02, 275.93),
-  minusOne = true,
-  freeze = true,
-  invincible = true,
-  blockevents = true,
-  -- animDict = 'amb@world_human_aa_smoke@male@idle_a',
-  -- anim = 'idle_a',
-  scenario = 'WORLD_HUMAN_AA_SMOKE',
-  flag = 1,
-  target = {
-      options = {
-      {
-       type = "client",
-       event = "Dox-hunting:client:sell",
-       icon = 'fas fa-shopping-basket ',
-       label = 'sell',
-      }
-  },
-  distance = 2.5,
-  }
- },
- ```
