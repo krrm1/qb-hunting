@@ -1,4 +1,4 @@
-# arabcodingteam-hunting
+# qb-hunting
 qb-hunting with qb-target
 
 dox-hunting code fixed
