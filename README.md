@@ -3,8 +3,8 @@ qb-hunting with qb-target
 
 dox-hunting code fixed
 
-made by : https://github.com/Doxthehuman/QBUS-Nopixel-Hunting
-fix by : arabcodingteam
+made by : https://github.com/Doxthehuman
+fix by : https://github.com/kareemc57
 
 ```
 video
